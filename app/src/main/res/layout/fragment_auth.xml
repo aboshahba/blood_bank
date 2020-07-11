@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <Button
+            android:id="@+id/fragment_aut_btn"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:background="@drawable/edit_text_background"
+            android:text="@string/sign_up"
+            android:textAlignment="center"
+            android:textColor="@color/edit_text_hint_color"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_aut_et_confirm_pass" />
+
+        <EditText
+            android:id="@+id/fragment_aut_et_name"
+            style="@style/fragment_aut_edit_text_style"
+            android:drawableStart="@drawable/auth_name_icon"
+            android:hint="@string/aut_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_auth_txt_title" />
+
+        <EditText
+            android:id="@+id/fragment_aut_et_email"
+            style="@style/fragment_aut_edit_text_style"
+            android:drawableStart="@drawable/auth_email"
+            android:hint="@string/aut_email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_aut_et_name" />
+
+        <EditText
+            android:id="@+id/fragment_aut_et_birth_day"
+            style="@style/fragment_aut_edit_text_style"
+            android:drawableStart="@drawable/auth_birthday"
+            android:hint="@string/birthday_date"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_aut_et_email" />
+
+        <EditText
+            android:id="@+id/fragment_aut_spinner_blood_type"
+            style="@style/fragment_aut_edit_text_style"
+            android:drawableStart="@drawable/ic_blood_drop"
+            android:hint="@string/fragment_aut_blood_type"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_aut_et_birth_day" />
+
+        <EditText
+            android:id="@+id/fragment_aut_et_last_donation_date"
+            style="@style/fragment_aut_edit_text_style"
+            android:drawableStart="@drawable/auth_birthday"
+            android:hint="@string/last_donation_date"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_aut_spinner_blood_type" />
+
+        <EditText
+            android:id="@+id/fragment_aut_et_government"
+            style="@style/fragment_aut_edit_text_style"
+            android:drawableStart="@drawable/home"
+            android:hint="@string/aut_government"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_aut_et_last_donation_date" />
+
+        <EditText
+            android:id="@+id/fragment_aut_et_city"
+            style="@style/fragment_aut_edit_text_style"
+            android:drawableStart="@drawable/home"
+            android:hint="@string/aut_city"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_aut_et_government" />
+
+        <EditText
+            android:id="@+id/fragment_aut_et_num"
+            style="@style/fragment_aut_edit_text_style"
+            android:drawableStart="@drawable/ic_phone_24dp"
+            android:hint="@string/aut_phone"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_aut_et_city" />
+
+        <EditText
+            android:id="@+id/fragment_aut_et_pass"
+            style="@style/fragment_aut_edit_text_style"
+            android:drawableStart="@drawable/password"
+            android:hint="@string/aut_pass"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_aut_et_num" />
+
+        <EditText
+            android:id="@+id/fragment_aut_et_confirm_pass"
+            style="@style/fragment_aut_edit_text_style"
+            android:drawableStart="@drawable/password"
+            android:hint="@string/fragment_aut_et_confirm_pass"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_aut_et_pass" />
+
+        <TextView
+            android:id="@+id/fragment_auth_txt_title"
+            style="@style/login_cycle_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_32sdp"
+            android:text="@string/fragment_aut_title"
+            android:textAlignment="center"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

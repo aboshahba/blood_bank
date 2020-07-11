@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <Button
+        android:id="@+id/fragment_login_btn_in"
+        style="@style/user_cycle_button"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="32dp"
+        android:text="@string/login_button_sign_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_login_forget_pass_text_view" />
+
+    <Button
+        android:id="@+id/fragment_login_register_button"
+        style="@style/user_cycle_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/logo_background_color"
+        android:text="@string/login_button_register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/fragment_login_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layoutDirection="locale"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_login_remember_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_login_remember_text_view" />
+
+    <EditText
+        android:id="@+id/fragment_login_password_edit_text"
+        style="@style/login_cycle_edit_text_style"
+        android:hint="@string/login_hint_pass"
+        android:inputType="textPassword"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_login_email_edit_text" />
+
+    <EditText
+        android:id="@+id/fragment_login_email_edit_text"
+        style="@style/login_cycle_edit_text_style"
+        android:hint="@string/login_hint_mobile_number"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_login_logo" />
+
+    <ImageView
+        android:id="@+id/fragment_login_logo"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layoutDirection="locale"
+        android:src="@drawable/login_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fragment_login_remember_text_view"
+        style="@style/login_cycle_text_view"
+        android:layoutDirection="locale"
+        android:text="@string/login_remember_text_view"
+        android:textDirection="locale"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_login_password_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_login_password_edit_text" />
+
+    <TextView
+        android:id="@+id/fragment_login_forget_pass_text_view"
+        style="@style/login_cycle_text_view"
+        android:layoutDirection="locale"
+        android:text="@string/login_forget_pass_text_view"
+        android:textDirection="locale"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_login_remember_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_login_check_box"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="@+id/fragment_login_password_edit_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

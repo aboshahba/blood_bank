@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">blood_bank</string>
+    <string name="fragment_view_pager_description">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض علي العميل ليتصور طريقة وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ....بروشر او فلاير علي سبيل المثال ... او نماذج مواقع </string>
+    <string name="login_hint_mobile_number">الجوال</string>
+    <string name="login_hint_pass">كلمة المرور</string>
+    <string name="login_remember_text_view">تذكرني</string>
+    <string name="login_forget_pass_text_view">هل نسيت كلمة السر ؟</string>
+    <string name="login_button_sign_in">دخول</string>
+    <string name="login_button_register">لا تمتلك حساب ؟ يمكنك التسجيل من هنا</string>
+    <string name="fragment_aut_title">انشاء حساب جديد </string>
+    <string name="aut_name">الاسم </string>
+    <string name="aut_email">البريد الالكتروني </string>
+    <string name="birthday_date">تاريخ الميلاد</string>
+    <string name="last_donation_date">اخر تاريخ للتبرع بالدم </string>
+    <string name="aut_government">المحافظة </string>
+    <string name="aut_city">المدينه </string>
+    <string name="aut_phone">رقم الهاتف </string>
+    <string name="aut_pass">الرقم السري </string>
+    <string name="fragment_aut_et_confirm_pass">تاكيد الرقم السري </string>
+    <string name="sign_up">تسجيل</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_aut_blood_type">فصيلة الدم</string>
+    <string name="fragment_forget_pass_send">ارسال</string>
+    <string name="confirm_pass">تاكيد كلمة السر الجديده</string>
+    <string name="new_pass">كلمة السر الجديده</string>
+    <string name="verification_code">كود التحقيق</string>
+    <string name="change">تغيير</string>
+
+
+</resources>
